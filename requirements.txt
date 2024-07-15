@@ -1,4 +1,4 @@
 streamlit 
-pypdf2==2.9.0 
+pypdf2==2.0.0 
 transformers 
 torch
