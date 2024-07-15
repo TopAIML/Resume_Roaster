@@ -1,5 +1,6 @@
 streamlit 
 pypdf2
+accelerate
 transformers 
 torch
 bitsandbytes
