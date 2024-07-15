@@ -9,9 +9,8 @@ st.title('PDF Text Analysis and Generation')
 def read_pdf(file):
     pdf_reader = PdfReader(file)
     text = ""
-    for page_num in range(pdf_reader.numPages):
-        page = pdf_reader.getPage(page_num)
-        text += page.extractText()
+    for page in pdf_reader.pages:
+        text += page.extract_text()
     return text
 
 # Function to generate text using transformer model
