@@ -1,5 +1,5 @@
 import streamlit as st
-from PyPDF2 import PdfFileReader
+from PyPDF2 import PdfReader
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
@@ -7,7 +7,7 @@ st.title('PDF Text Analysis and Generation')
 
 # Function to read PDF and extract text
 def read_pdf(file):
-    pdf_reader = PdfFileReader(file)
+    pdf_reader = PdfReader(file)
     text = ""
     for page_num in range(pdf_reader.numPages):
         page = pdf_reader.getPage(page_num)
