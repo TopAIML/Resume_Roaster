@@ -21,9 +21,9 @@ config = BitsAndBytesConfig(
     bnb_4bit_use_double_quant=True,
     bnb_4bit_compute_dtype=torch.bfloat16,
 )
-tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-128k-instruct")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-vision-128k-instruct")
 model = AutoModelForCausalLM.from_pretrained( 
-"microsoft/Phi-3-mini-128k-instruct",  
+"microsoft/Phi-3-vision-128k-instruct",  
 device_map="cuda",  
 torch_dtype="auto",  
 trust_remote_code=True,  
