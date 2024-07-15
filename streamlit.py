@@ -1,7 +1,7 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline,BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline ,BitsAndBytesConfig
 
 st.title('PDF Text Analysis and Generation')
 
